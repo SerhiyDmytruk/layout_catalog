@@ -3,10 +3,10 @@
 
   list-style: none;
   margin: 0;
-  padding: 50px 40px;
+  padding: $card-grid-padding;
   display: grid;
-  grid-template-columns: repeat(var(--column-count), 200px);
-  gap: 48px 46px;
+  grid-template-columns: repeat(var(--column-count), $card-width);
+  gap: $col-gap $row-gap;
   justify-content: center;
 
   &__item {
@@ -15,7 +15,7 @@
     @include smooth-hover(transform);
 
     &:hover {
-      transform: scale(1.2);
+      transform: scale($card-scale);
     }
   }
 }

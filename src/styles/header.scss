@@ -13,17 +13,17 @@ body {
 }
 
 header {
-  background-color: white;
+  background-color: $color-white;
   display: flex;
   align-items: center;
   justify-content: space-between;
-  padding: 0 50px;
+  padding: $header-padding-inline;
   margin: 0;
   box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.05);
 }
 
 .logo {
-  height: 40px;
+  height: $logo-height;
 }
 
 .nav {
@@ -50,7 +50,7 @@ header {
   line-height: 1;
   color: $color-nav;
   position: relative;
-  height: 60px;
+  height: $nav-height;
 
   @include smooth-hover(color);
 }
