@@ -15,7 +15,8 @@ body {
   transition: $prop 0.3s;
 }
 
-@import './headers';
+@import './variables';
+@import './header';
 @import './card-grid';
 @import './card';
 @import './stars';
